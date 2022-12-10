@@ -12,6 +12,9 @@ $ git init [项目名称]
 
 # 克隆存储库(默认master分支)
 $ git clone <git仓库url地址>
+
+# 克隆存储库(指定分支)
+$ git clone -b [分支名] <git仓库url地址>
 ```
 
 ## 配置
@@ -28,6 +31,16 @@ $ git config --global color.ui auto
 
 # 在文本编辑器中编辑全局配置文件
 $ git config --global --edit
+```
+
+## 添加文件至暂存区(git add)
+
+```bash
+# 添加指定文件到暂存区
+$ git add [文件名]
+
+# 添加当前文件夹下所有的文件到暂存区
+$ git add .
 ```
 
 ## 变更
@@ -197,26 +210,6 @@ $ git mv [existing-path] [new-path]
 
 # 显示所有提交日志，并指示任何移动的路径
 $ git log --stat -M
-```
-
-## 忽略文件
-
-`.gitignore` 文件指定了 Git 应该忽略的故意未跟踪的文件
-
-```bash
-/logs/*
-
-# "!" 意思是不要忽视
-!logs/.gitkeep
-
-# 忽略 Mac 系统文件
-.DS_store
-
-# 忽略 node_modules 文件夹
-node_modules
-
-# 忽略 SASS 配置文件
-.sass-cache
 ```
 
 ## 分支
