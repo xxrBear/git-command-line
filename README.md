@@ -111,6 +111,18 @@ $ git push origin -u <new_name>
 
 # 删除远程分支
 $ git push origin --delete <old>
+
+# 列出所有分支及其上游
+$ git branch -vv 
+
+# 快速切换到上一个分支
+$ git checkout -
+
+# 只获取远程分支
+$ git branch -r
+
+# 从另一个分支签出单个文件
+$ git checkout <branch> -- <file>
 ```
 
 ## 观察存储库
@@ -212,18 +224,3 @@ $ git mv [existing-path] [new-path]
 $ git log --stat -M
 ```
 
-## 分支
-
-```bash
-# 列出所有分支及其上游
-$ git branch -vv 
-
-# 快速切换到上一个分支
-$ git checkout -
-
-# 只获取远程分支
-$ git branch -r
-
-# 从另一个分支签出单个文件
-$ git checkout <branch> -- <file>
-```
